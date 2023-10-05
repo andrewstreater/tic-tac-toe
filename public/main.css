@@ -1,0 +1,89 @@
+/* Your code here */
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#body-content {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#play-surface {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i";
+}
+
+#square-0 {
+    grid-template: a;
+    border-right: solid;
+    border-bottom: solid;
+}
+#square-1 {
+    grid-template: b;
+    border-right: solid;
+    border-left: solid;
+    border-bottom: solid;
+}
+#square-2 {
+    grid-template: c;
+    border-left: solid;
+    border-bottom: solid;
+}
+#square-3 {
+    grid-template: d;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+}
+#square-4 {
+    grid-template: e;
+    border: solid;
+}
+#square-5 {
+    grid-template: f;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
+}
+#square-6 {
+    grid-template: g;
+    border-right: solid;
+    border-top: solid;
+}
+#square-7 {
+    grid-template: h;
+    border-right: solid;
+    border-left: solid;
+    border-top: solid;
+}
+#square-8 {
+    grid-template: i;
+    border-left: solid;
+    border-top: solid;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border-color: chocolate;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
